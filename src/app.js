@@ -62,7 +62,7 @@ function displayForecast(response) {
 }
 function getForecast(coordinates) {
   let apiKey = "1fdeb6e5797d4d955268ac4f9b68ed6f";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
 function displayTemperature(response) {
